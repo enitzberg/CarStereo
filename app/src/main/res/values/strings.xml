@@ -3,4 +3,17 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="Power">New ToggleButton</string>
+    <string name="Lower">New Button</string>
+    <string name="Lower_Vol">New Button</string>
+    <string name="LowerVol">Lower Vol</string>
+    <string name="HigherVol">Higher Vol</string>
+    <string name="hivol">Higher Vol</string>
+    <string name="Pause">New Button</string>
+    <string name="Stop">New Button</string>
+    <string name="Eject">New Button</string>
+    <string name="Rewind">New Button</string>
+    <string name="Forward">New Button</string>
+    <string name="pause">Pause</string>
+    <string name="Pause1">Pause</string>
 </resources>

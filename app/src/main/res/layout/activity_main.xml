@@ -22,5 +22,127 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/material_deep_teal_200"
-        android:layout_weight="1"></LinearLayout>
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seek -"
+                android:id="@+id/button8"
+                android:layout_gravity="bottom|center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seek +"
+                android:id="@+id/button9"
+                android:layout_gravity="bottom|center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CD SLOT"
+                android:id="@+id/textView"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:gravity="bottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:id="@+id/button3"
+                android:layout_gravity="bottom" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:id="@+id/button4"
+                android:layout_gravity="bottom" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eject"
+                android:id="@+id/button5"
+                android:layout_gravity="bottom" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rewind"
+                android:id="@+id/button6"
+                android:layout_gravity="bottom" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forward"
+                android:id="@+id/button7"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/LowerVol"
+                android:id="@+id/button"
+                android:layout_gravity="left|bottom" />
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/progressBar"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hivol"
+                android:id="@+id/button2" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Power"
+            android:id="@+id/toggleButton"
+            android:layout_gravity="bottom|right" />
+
+    </LinearLayout>
 </LinearLayout>
