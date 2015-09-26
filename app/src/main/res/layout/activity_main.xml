@@ -13,16 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/accent_material_light"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="1"
-        >
+        android:layout_weight="1">
 
-        <Switch
+        <ToggleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Switch"
-            android:id="@+id/AmFmSwitch"
-            android:layout_gravity="right" />
+            android:text="New ToggleButton"
+            android:id="@+id/AMFM"
+            android:layout_gravity="right"
+            android:textOn="AM/FM"
+            android:textOff="AM/FM" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.16"
             android:weightSum="1"
             android:layout_marginLeft="40dp">
 
@@ -59,32 +59,46 @@
                 android:text="3"
                 android:id="@+id/Save_3" />
 
-            <ImageView
-                android:layout_width="263dp"
-                android:layout_height="317dp"
-                android:id="@+id/imageView"
-                android:layout_gravity="center_vertical"
-                android:src="@mipmap/radiodis" />
-
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4"
-                android:id="@+id/Save4" />
+                android:id="@+id/Save_4" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="5"
-                android:id="@+id/Save5" />
+                android:id="@+id/Save_5" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="6"
-                android:id="@+id/Save6" />
+                android:id="@+id/Save_6" />
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/RadioDisplay"
+            android:layout_gravity="right"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="11:11" />
+
+        <TextView
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/RadioStation"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_weight="0.04"
+            android:visibility="invisible" />
 
     </LinearLayout>
 
@@ -217,7 +231,9 @@
             android:layout_height="wrap_content"
             android:text="@string/Power"
             android:id="@+id/Power"
-            android:layout_gravity="bottom|right" />
+            android:layout_gravity="bottom|right"
+            android:checked="false"
+            android:nestedScrollingEnabled="false" />
 
     </LinearLayout>
 </LinearLayout>
